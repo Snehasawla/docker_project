@@ -1,10 +1,47 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Author Information.
+Name: Sneha Sawla
+
+
+Roll Number: G23AI2113.
+ ## Website Information.
+ Small one page website created in NEXTJS and REACTJS.
+ it's detail about My Information with a youtube video link. 
 
 ## Getting start with docker
-Run the command to create docker build ```docker build -t my-app .```
+Build the Docker image: ```docker build -t my-app .```
+Run the Docker container: ```docker run -p 3000:3000 my-app```
 
-The above line of code will run Dockerfile file in a source folder of project.
+This will build and run your Next.js application inside a Docker container, making it accessible on http://localhost:3000.
+
+Create a Dockerfile in the root of your Next.js project:
+
+```dockerfile
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the package.json and package-lock.json files to the container
+COPY package*.json ./
+
+# Install project dependencies
+RUN npm install
+
+# Copy the rest of the application code to the container
+COPY . .
+
+# Build the Next.js application
+RUN npm run build
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the application
+CMD ["npm", "start"]
+```
 
 ## Getting Started
 
