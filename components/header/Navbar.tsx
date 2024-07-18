@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import { AiOutlineMenu } from "react-icons/ai";
 // import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
-import Dropdown from "../Dropdown";
+// import Dropdown from "../Dropdown";
 // import Dropdown from "./Dropdown";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -27,12 +27,12 @@ const Navbar = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#" className="">
-              <div class="avatar">
-                <div class="rounded">
+              <div className="avatar">
+                <div className="rounded">
                   {/* <img src="" /> */}
                   <h1 className="text-3xl text-white font-bold text-nowrap">
                     {" "}
-                    Aniket's Acadamy{" "}
+                    Aniket (`&apos;)s Acadamy{" "}
                   </h1>
                 </div>
               </div>

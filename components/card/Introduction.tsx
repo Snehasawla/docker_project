@@ -4,7 +4,7 @@ const IntroductionCard = () => {
   return (
     <a
       href="#"
-      className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full"
+      className="relative w-full glide-01 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full"
     >
       <div className="bg-white">
         <Image
@@ -33,7 +33,7 @@ const IntroductionCard = () => {
           </li>
           <li>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Gate 52 Ranker in 2021
+              Gate 51 Ranker in 2021
             </p>
           </li>
         </ul>

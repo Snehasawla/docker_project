@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## Getting start with docker
+Run the command to create docker build ```docker build -t my-app .```
+
+The above line of code will run Dockerfile file in a source folder of project.
+
 ## Getting Started
 
 First, run the development server:
